@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 # Hive Google API
-# Copyright (c) 2008-2020 Hive Solutions Lda.
+# Copyright (c) 2008-2025 Hive Solutions Lda.
 #
 # This file is part of Hive Google API.
 #
@@ -22,25 +22,17 @@
 __author__ = "João Magalhães <joamag@hive.pt>"
 """ The author(s) of the module """
 
-__version__ = "1.0.0"
-""" The version of the module """
-
-__revision__ = "$LastChangedRevision$"
-""" The revision number of the module """
-
-__date__ = "$LastChangedDate$"
-""" The last change date of the module """
-
-__copyright__ = "Copyright (c) 2008-2020 Hive Solutions Lda."
+__copyright__ = "Copyright (c) 2008-2025 Hive Solutions Lda."
 """ The copyright for the module """
 
 __license__ = "Apache License, Version 2.0"
 """ The license for the module """
 
+
 class TokenAPI(object):
 
-    def info_token(self, access_token = None):
+    def info_token(self, access_token=None):
         access_token = access_token or self.access_token
         url = self.base_url + "oauth2/v1/tokeninfo"
-        contents = self.get(url, access_token = access_token)
+        contents = self.get(url, access_token=access_token)
         return contents

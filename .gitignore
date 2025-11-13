@@ -3,6 +3,8 @@
 
 session.shelve*
 
+/.venv
+
 /dist
 /build
 /src/google_api.egg-info
