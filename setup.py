@@ -42,6 +42,7 @@ setuptools.setup(
     url="http://google-api.hive.pt",
     zip_safe=False,
     packages=["google"],
+    test_suite="google.test",
     package_dir={"": os.path.normpath("src")},
     install_requires=["appier"],
     classifiers=[
